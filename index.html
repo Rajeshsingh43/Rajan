@@ -149,13 +149,19 @@ h1 {
         ₹100 से खेलो – 1 minute में payment 🔥
     </div>
 
-    <!-- ✅ FIXED BUTTON WITH TRACKING -->
-    <a href="https://rajan567mtka.site/apk/app.apk"
-       onclick="fbq('track', 'Lead', {value: 100.00, currency: 'INR'});">
+    <!--✅ FIXED BUTTON WITH TRACKING -->
+    <!-- <a href="https://rajan567mtka.site/apk/app.apk"
+       onclick="fbq('track', 'Lead', {value: 100.00, currency: 'INR'});"> -->
+       <a href="https://rajan567mtka.site/apk/app.apk"
+onclick="fbq('track', 'Lead');
+fbq('trackCustom','AppDownloadClick');
+setTimeout(()=>{window.location=this.href},500);
+return false;">
         <button class="download-btn">
             Download App
         </button>
     </a>
+   
 
     <div class="features-box">
         <h2>Features With Full Game Rates:</h2>
@@ -177,3 +183,12 @@ h1 {
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
